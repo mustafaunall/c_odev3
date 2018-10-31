@@ -2,13 +2,13 @@
 #include <stdio.h>
 
 void main() {
-	int a,b,x,obeb;
-	printf("obeb icin ilk sayi gir : "); scanf("%d", &a);
-	printf("obeb icin ikinci sayi gir : "); scanf("%d", &b);
-	if (a > b) x = a; else x = b;
-	for (int i = x; i >= 1; i--)
+	int a, b, x, obeb;
+	printf("obeb icin ilk sayi gir : "); scanf("%d", &a); // ilk sayıyı a'ya atadım
+	printf("obeb icin ikinci sayi gir : "); scanf("%d", &b); // ikinci sayıyı b'ye atadım
+	if (a > b) x = a; else x = b; // büyük olanı x'e atadım
+	for (int i = x; i >= 1; i--) // büyük sayıdan 1 e kadar kalansız bölünme test ettim
 	{
 		if ((a%i == 0) && (b%i == 0)) { obeb = i; break; } else continue;
 	}
-	printf("OBEB = %d", obeb);
+	printf("OBEB = %d", obeb); // OBEB'i yazdırdım
 }
