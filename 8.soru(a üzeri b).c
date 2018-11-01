@@ -2,13 +2,13 @@
 #include <stdio.h>
 
 int main() {
-	int a, b, x;
+	int a, b, a_ilk;
 	printf("a uzeri b icin a girin : "); scanf("%d", &a);
 	printf("a uzeri b icin b girin : "); scanf("%d", &b);
-	x = a;
+	a_ilk = a;
 	for (int i = 1; i < b; i++)
 	{
-		a = a * x;
+		a = a * a_ilk;
 	}
-	printf("%d", a);
+	printf("%d uzeri %d = %d", a_ilk, b, a);
 }
