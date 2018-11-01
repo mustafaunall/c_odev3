@@ -13,6 +13,6 @@ int main() {
 			sonuc = sonuc * 10 + kalan;
 			gecici /= 10;
 		}
-	if (sayi == sonuc) printf("Sayı Palindrom'dur.");
-	else printf("Sayı Palindrom değildir!");
+	if (sayi == sonuc) printf("Sayı Palindrome'dur.");
+	else printf("Sayı Palindrome değildir!");
 }
